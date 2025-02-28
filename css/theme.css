@@ -1,0 +1,31 @@
+/* Tema Terang (Default) */
+body.light-theme {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+  
+  .light-theme .card {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .light-theme .list-group-item {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Tema Gelap */
+  body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-theme .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .dark-theme .list-group-item {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
