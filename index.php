@@ -122,7 +122,7 @@ $status = mysqli_query($conn, "SELECT status.*, user.nama FROM status LEFT JOIN 
                                         <button class="btn btn-light btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <strong>⋮</strong> <!-- ikon dropdown -->
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
+                                        <ul class="dropdown-menu dropdown-menu-end chat-bubble">
                                             <li>
                                                 <!-- edit menggunakan anchor (<a>) -->
                                                 <a href="editStatus.php?id_status=<?= $rowStatus['id']; ?>" class="dropdown-item">✏️ Edit</a>
@@ -131,7 +131,7 @@ $status = mysqli_query($conn, "SELECT status.*, user.nama FROM status LEFT JOIN 
                                                 <!-- Form untuk Hapus -->
                                                 <form action="index.php" method="POST" onsubmit="return confirm('Yakin ingin menghapus status ini?');">
                                                     <input type="hidden" name="id_status" value="<?= $rowStatus['id']; ?>">
-                                                    <button type="submit" name="hapus" class="dropdown-item text-danger">🗑️ Hapus</button>
+                                                    <button type="submit" name="hapus" class="dropdown-item">🗑️ Hapus</button>
                                                 </form>
                                             </li>
                                         </ul>

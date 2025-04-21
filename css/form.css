@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .form-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    color: #fff;
+  }
+
+  .form-card h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    box-shadow: none;
+  }
+
+  label {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .btn-submit {
+    background-color: #fff;
+    color: #2575fc;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .btn-submit:hover {
+    background-color: #2575fc;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .form-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .form-link:hover {
+    color: #cce0ff;
+  }

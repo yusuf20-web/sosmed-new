@@ -37,45 +37,41 @@ if(mysqli_num_rows($login) > 0){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>SosmedKu - Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SosmedKu - Login</title>
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center align-items-center" style="height: 100vh;">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header text-white bg-primary">
-                        <h3>Silahkan Login</h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="" method="post">
-                            <div class="form-group mb-3">
-                                <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <div class="mb-3">
-                                <a href="register.php" class="text-decoration-none">Belum punya akun? Daftar disini</a>
-                            </div>
-                            <div class="mb-3 d-grid gap-2 col-6 mx-auto">
-                                <button type="submit" class="btn btn-primary" name="login">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-6">
+        <div class="form-card">
+          <h3>Welcome Back to <span style="color: #cce0ff;">SosmedKu</span></h3>
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="email">Email / Username</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan email atau username" required>
             </div>
+            <div class="mb-3">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+            </div>
+            <div class="mb-3 text-center">
+              <a href="register.php" class="form-link">Belum punya akun? Daftar disini</a>
+            </div>
+            <div class="d-grid gap-2 col-8 mx-auto">
+              <button type="submit" class="btn btn-submit" name="login">Masuk</button>
+            </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/theme.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
